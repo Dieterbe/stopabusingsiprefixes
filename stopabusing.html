@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<title>Stop abusing SI prefixes!</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1455070-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<h1>Stop abusing SI prefixes!</h1>
+<pre>Cause 1024 just ain't 1000</pre>
+
+Hi there!
+<br/>Welcome to this little webpage, devoted to the noble goal of trying to stop the abusing and massacration of SI prefixes.
+<br/>I wrote this page for two reasons:
+<ol>
+	<li>Nearly everyone in the immensely broad spectrum of computer sciences and related fields is doing it wrong.  Those who try to do it right, are being held back by the ignorance of the former group.  This causes us to waste a lot of time questioning stuff which should be obvious, finding bugs, etc.  And it makes us look like complete retards rather then professionals/engineers/scientists. (almost as much when you need to tell a scientist in another field why you can't get his mail to work)</li>
+	<li>Modern IT scientists don't read RFC's or specifications/standards.  It seems you need a <a href="http://whygitisbetterthanx.com/">fancy website</a> on a <a href="http://betterthangrep.com/">dedicated domain</a> to grab their attention. (okay, not pretty yet. <a href="#contact">pretty theme welcome</a>)</li>
+</ol>
+
+If you notice anything wrong on this page or if you have suggestions, you can <a href="#contact">let me know</a>.
+<h2>So, what's the problem?</h2>
+See <a href="http://www.bipm.org/en/si/si_brochure/chapter3/prefixes.html">this</a>?
+They are called SI prefixes.  Pretty clever stuff (once you manage to wrap your head around their immense complexity).
+</br>On the 11th CGPM conference, held by <a href="http://www.bipm.org/en/home/">BIPM</a> (the same guys who invented things like the gram and the metre.  Yes I know the US has not adopted the metric system but that's a different story, read on), they were standardized.
+<br/>That was way back in 1960.
+<br/><a href=http://en.wikipedia.org/wiki/1960s">1960</a>.
+<br/>That's 4 years before the 'BASIC' language came to life, and 9 years before the introduction of <a href="http://en.wikipedia.org/wiki/Arpanet">ARPANET</a> (you know, that little network that grew to become the internet as we know it today.  It didn't have e-mail)
+<br/>You remember that, 1960? Neither do I.  Maybe because we both weren't even born back then.  But I learned about SI prefixes in 3rd grade (or whatever) science classes. 
+<br>Even if you live in one of the three backw..I mean "different" <a href="http://en.wikipedia.org/wiki/File:Metrication_by_year_map.svg">countries which haven't adopted</a> the totally awesome <a href="http://en.wikipedia.org/wiki/Metric_system">metric system</a> there is no excuse:
+Both the <a href="http://en.wikipedia.org/wiki/International_Electrotechnical_Commission">IEC (which includes the USA)</a> and the <a href="www.nist.gov">US National Instute of Standards and Technology</a> <a href="http://physics.nist.gov/cuu/Units/prefixes.html">support SI prefixes</a>)
+<br/>
+<br/>
+Apparently some of the early computer engineers (well, if you think they were worthy of the term "engineer") were sloppy and thought it was OK to ignore some of the basic principles of science/math.
+In computing, you deal with a lot of numbers with base 2, rather then base 10.  Apparently they found 10^3 (1000) "close enough" to 2^10 (1024) and since k=1000, they found <a href="http://en.wikipedia.org/wiki/Kilobyte">k means also 1024</a>. (similar lame excuse for the other prefixes).
+<br/>
+<br/>And due to some kind of mass-confusion/conformist behavior/whatever, we're stuck with that shit for decades now.  (the <a href="http://en.wikipedia.org/wiki/JEDEC_memory_standards">JEDEC</a> "standardization" association didn't help either. I wouldn't exactly call formalizing incorrect usage "standardisation")
+Or are we?
+<h2>Solution</h2>
+There is really no need we should spend this much of our time fixing 1000!=1024 bugs, clarifying what we mean to each other, trying to interpret ambigious information or explaining mom/dad/uncle why their hard disk is not smaller then it's advertised to be (or worse: a lot of people actually believe that crap and spread the myth around.  read on..)
+<br/>
+<!-- Even in the days when we had no officially recognized abbrevations, you could still easily say 2^10 or 2^20. Surely that looks a bit weird, but I think you'd get used to it quickly. # not the most convenient either. though we could have used 'ki' or something before the standard existed -->
+Guess what, there actually <em>is</em> <a href="http://en.wikipedia.org/wiki/Binary_prefix">a standard that adresses this issue</a>, a standard which dictates which prefixes you should use to represent powers of two.
+<br/>And this time, the standard is "only" 12 years old.
+<br/>Again, our American friends <a href="http://physics.nist.gov/cuu/Units/binary.html">are covered as well</a>
+
+<h2>Common myths</h2>
+<ul>
+<li> Hard disk vendors lie
+<br/><b>Wrong</b>. They just honor SI. As should you.  Stop falsely accusing honest folks. Get informed.
+<br/>Oh yeah, and also don't blame them for the fact that your file system and MBR need space to store their stuff.</li>
+<li>I don't need to be so punctual, people will get what I'm talking about.
+<br/>Seriously? I mean... really?</li>
+<li>Ubuntu is lame.
+<br/>Maybe, but at least they have a sensible <a href="https://wiki.ubuntu.com/UnitsPolicy">units policy</a>. Debian is <a href="http://wiki.debian.org/ConsistentUnitPrefixes">trying to fix it</a> aswell.  Even O'Reilly (almost) <a href="http://oreilly.com/oreilly/author/stylesheet.html">gets it!</a>. I'm told MacOS UI's are doing the right thing, and some Redmond-based operating system is of course doing it <a href="http://en.wikipedia.org/wiki/File:Windows_XP_Disk_management_for_160_GB_disk.png">completely wrong</a> again.</li>
+</ul>
+
+<h2>While we're at it</h2>
+<ul>
+	<li>'k' is not the same as 'K'</li>
+	<li>Get your ******* units right: 'B' means byte, 'b' means bit. (<a href="http://en.wikipedia.org/wiki/IEEE_1541">IEEE 1541</a>)</li>
+	<li>A prefix without a unit is meaningless: use kB, MiB, or whatever. But not k or M.  (I'm looking at you GNU coreutils!)</li>
+</ul>
+
+<h2>To conclude</h2>
+learn <a href="http://physics.nist.gov/cuu/Units/binary.html">this table</a>
+<br/>Or <a href="http://en.wikipedia.org/wiki/Binary_prefix">the one at the top of this page</a> (but ignore the JEDEC column!)
+<table>
+	<tr>
+		<td><img src="http://www.bipm.org/utils/common/img/Mk_portrait.jpg" height="300" alt="M. Kuhne. awesomest guy on the planet"></td>
+		<td><img src="http://4.bp.blogspot.com/_txOWjhFJODM/TAfyTtUs0KI/AAAAAAAAIZE/BsUKnO3yUPE/s1600/sad-panda.jpg" alt="SI prefix harassment panda" height="300"></td>
+	</tr>
+	<tr>
+		<td>Prof. M. Kuhne, director of BIPM.<br/>
+		    Thinks you're awesome if you don't abuse his work</td>
+		<td>Sad panda.  This is what happens if you molest SI prefixes</td>
+	</tr>
+	</table>
+
+<h3 id="sources">Sources</h3>
+I don't claim to know better than anyone else.
+I wrote this page based on what I found on various sources and Wikipedia pages. <a href="#contact">Let me know</a> if you found any mistakes.
+<br/>I just know I want this issue off the table (because it gets on my nerves every single time), I want to do science properly.
+<br/>If it wasn't obvious yet, you should take this page with a grain of salt.
+
+<h3 id="contact">Contact</h3>
+Send suggestions, bugreports, ... to dieter@stopabusingsiprefixes.org
+<br/>If you want to build a nice layout, get in touch first
+
+<h3>Legal</h3>
+<ul>
+	<li>Licence?</li>
+	<li>Source of this page is on <a href="">Github</a></li>
+</ul>
+</body>
+</html>
