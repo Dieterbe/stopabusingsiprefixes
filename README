@@ -1,0 +1,5 @@
+This repo contains the source code for the website @ http://stopabusingsiprefixes.org
+
+Branches:
+* develop: main development, receives non-fastforward pushes
+* master: stable development
